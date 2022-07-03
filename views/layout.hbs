@@ -28,25 +28,27 @@
             <div class="navigator">
                 <nav>
                     <ul>
-                        <li><a class="activo" href="index.html">INICIO</a></li>
-                        <li><a href="servicios.html">SERVICIOS</a></li>
-                        <li><a href="monocle.html">MONOCLE</a></li>
-                        <li><a href="contacto.html">CONTACTO</a></li>
+                        <li><a class="{{#if isHome}}activo{{/if}}" href="/">INICIO</a></li>
+                        <li><a class="{{#if isServicios}}activo{{/if}}"href="/servicios">SERVICIOS</a></li>
+                        <li><a class="{{#if isMonocle}}activo{{/if}}"href="/monocle">MONOCLE</a></li>
+                        <li><a class="{{#if isContacto}}activo{{/if}}"href="/contacto">CONTACTO</a></li>
                     </ul>
                 </nav>
 
-            </div>
+            </div> 
 
         
 
 
-    </header>
+    </header>  
 
+
+<main class="holder">
 
     {{{body}}}
 
 
-
+</main>
 
 <footer class="holder">
 
