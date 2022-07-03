@@ -1,0 +1,645 @@
+/*
+
+font-family: 'Montserrat', sans-serif;   LIGHT300/regular400/semibold600/bold700/ italic
+font-family: 'Montserrat Alternates', sans-serif;    LIGHT300/regular400/semibold600/bold700/ italic
+font-family: 'Montserrat Subrayada', sans-serif;   REGULAR200/BOLD700
+
+Ver #028c85 /  VADarl #025650 /  VALite #02847d 
+Orange #ff8f00 /  ODark #d87203  / OLite #fc982b
+Plomo #636363  / PDark #414242   / PLite #999999
+
+*/
+
+html {
+    animation-name: todo;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes todo {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    background: url(/img/bgmono2.png);
+
+    background-color: #edeaee;
+    background-repeat: repeat-y;
+    background-position-x: right;
+}
+
+
+
+header {
+
+    margin: 10px 0 30px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.imagotipo img {
+    max-width: 100%
+}
+
+
+
+.navigator {
+    /*background-color: pink;*/
+    display: flex;
+    /* estos dos me permiten*/
+    align-items: flex-end;
+    /* que los links se vayan abajo*/
+    text-align: left;
+    margin-left: 30px;
+
+
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+
+
+nav ul li a {
+    border-top: 1px solid #02847d;
+    border-bottom: 1px solid #02847d;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 10px;
+    /* crea la separación entre las palabras del menu*/
+    padding: 3px 5px;
+    /* para que se vean los espacio al princio y final de la letra, hace que se vea la linea de arriba y abajo más larga*/
+    /*display: block;*/
+    transition: all 0.25s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff8f00;
+    color: white;
+    padding-top: 70px;
+    font-weight: 600;
+
+}
+
+nav ul li a.activo {
+    background-color: #ff8f00;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding-top: 70px;
+
+}
+
+
+
+footer {
+    background-color: #02847d;
+    text-align: center;
+
+    padding: 10px 0;
+    color: white;
+    max-width: 100%;
+
+}
+
+footer.holder {
+    max-width: 100%;
+}
+
+
+footer .parte {
+    display: inline-block;
+    margin: 0 2%;
+    text-align: left;
+
+}
+
+
+
+footer h4 {
+    margin-bottom: 5px;
+}
+
+
+
+.parte:last-child {
+    text-align: center;
+}
+
+
+.parte {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    line-height: 12px;
+
+}
+
+.parte img {
+    max-width: 100%
+}
+
+.parte.mail {
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+
+}
+
+
+
+
+.parte a {
+    color: white;
+    text-decoration: none;
+    line-height: 17px;
+
+}
+
+.parte a:hover {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+
+footer p {
+    margin: 0;
+    font-size: 10px;
+    max-width: 100%;
+
+}
+
+
+
+.holder {
+    /*CONTENIDO EN EL MEDIO*/
+    max-width: 950px;
+    margin: auto;
+
+}
+
+
+
+
+
+main {
+    text-align: center;
+}
+
+
+/*//////////////// HOME ////////////*/
+
+
+
+
+.principal {
+    /*FOTO*/
+
+    max-width: 80%;
+    /* background-color: aqua;*/
+    margin-bottom: 10px;
+
+}
+
+
+
+.caja {
+    margin: 0;
+    transition: all 0.25s ease;
+    /*background-color: #9ed8d5d8;*/
+    margin: auto 50px 0;
+    text-align: center;
+}
+
+
+.caja img {
+    max-height: 100%;
+}
+
+
+
+.caja:hover img {
+    transform: scale(1.2);
+    transition: all 0.25s ease;
+}
+
+
+.botonesabajo {
+    /*COMO CARAJO TE PONGO EN EL MEDIO*/
+    display: inline-flex;
+    margin-top: 20px;
+    /*background-color: red;   */
+    margin: 1rem;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+
+.botonesabajo p {
+    text-align: center;
+    /*margin-left: 30px;************ ESTOSIRVE PAR ACENTRAR**/
+    font-weight: 700;
+    font-size: smaller;
+    color: gray;
+
+
+}
+
+.botonesabajo img {
+    height: 100px;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+    /*background-color: bisque;*/
+    transition: all 0.25s ease;
+
+}
+
+.botonesabajo img:nth-child(2) {
+    margin: 0 30px 0 0;
+
+}
+
+/*.botonesabajo img:hover {
+    transform: scale(1.2);
+}*/
+
+
+/*//////////////// FIN HOME ////////////*/
+
+
+
+/*//////////////SERVICIOS ////////////////*/
+
+.titulo {
+    display: inline-flex;
+    align-items: center;
+    /*background-color: pink;*/
+    font-family: 'Montserrat';
+    color: #02847d;
+    max-width: 800px;
+
+}
+
+.titulo img {
+    max-height: 100px;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+    /*background-color: bisque;*/
+}
+
+
+
+.titulo div h1 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 40px;
+    /*height: 30px;*/
+    width: 600px;
+    border-bottom: 2px solid #02847d;
+    text-align: right;
+    /*background-color: burlywood;*/
+}
+
+
+.servicios {
+    display: block;
+    margin: auto;
+
+
+}
+
+.servicio {
+    max-width: 700px;
+    line-height: 17px;
+    /*background-color: lightblue;*/
+    display: inline-flex;
+    /*margin: 10px 20%;*/
+    border-bottom: 1px solid #d87203;
+    padding-right: 10px;
+    margin-bottom: 50px;
+
+
+}
+
+.asesor {
+    margin-top: 60px;
+}
+
+.servicio h2 {
+    color: #02847d;
+    font-family: 'Montserrat Subrayada';
+    font-size: 30px;
+    font-weight: 400;
+    text-align: left;
+    padding: 0px 0 15px 0px;
+
+
+}
+
+.servicio p {
+    text-align: left;
+    font-weight: 400;
+    text-align: justify;
+
+}
+
+
+.servicio:nth-last-child(1) {
+    border-bottom: none;
+}
+
+
+
+
+
+.ima {
+    margin-left: auto;
+    display: block;
+
+
+}
+
+.ima img {
+    width: 170px;
+    margin-bottom: 30px;
+}
+
+.servicio ul {
+    text-align: left;
+    padding-left: 20px;
+
+
+}
+
+.info {
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+}
+
+
+
+
+
+
+/*////////////// FIN SERVICIOS ////////////////*/
+
+
+/*//////////////  INICIO MONOCLE ////////////////*/
+
+
+.monocle {
+    max-width: 700px;
+    display: inline-block;
+    margin-bottom: 50px;
+    /*background-color: burlywood;*/
+
+}
+
+.monocle p {
+    text-align: justify;
+
+}
+
+.monocle img {
+    width: 200px;
+}
+
+b {
+    color: #025650;
+}
+
+.qori {
+    shape-outside: url(img/qori.png);
+    shape-image-threshold: 0.5;
+    shape-margin: 100000px;
+    float: right;
+}
+
+.parrafo1 {
+    margin-top: 30px;
+}
+
+
+
+/*////////////// FIN MONOCLE ////////////////*/
+
+
+
+
+/*************INICIO CONTACTO*******************/
+
+
+
+
+.contacto {
+    display: flex;
+    gap: 24px;
+    /* ME HACE UN ESPACIO*/
+    text-align: left;
+    margin-bottom: 50px;
+
+}
+
+
+
+.contacto h2 {
+    color: #ff8f00;
+    margin-top: 20px;
+}
+
+.datos h2 {
+    color: #ff8f00;
+    margin-top: 20px;
+    margin-bottom: 14px;
+}
+
+.contacto div {
+    width: 50%;
+    /*background-color: yellow;*/
+
+}
+
+
+
+
+
+
+.datos {
+    text-align: left;
+    width: 50%;
+}
+
+.datos p {
+    font-size: 14px;
+}
+
+.datos ul li {
+    font-size: 13px;
+    list-style: none;
+
+}
+
+.wsp {
+    display: flex;
+    align-items: center;
+    line-height: 25px;
+    margin-bottom: 15px;
+
+}
+
+.wsp p {
+    margin-top: 3px;
+}
+
+.wsp a {
+
+    font-size: 15px;
+
+    text-decoration: none;
+    color: #025650;
+}
+
+.wsp a:hover {
+    color: #d87203;
+}
+
+.redesmail a {
+    font-size: 18px;
+}
+
+.redesmail img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.formulario p {
+    display: flex;
+}
+
+.formulario p label {
+    color: #02847d;
+    min-width: 100px;
+    background-color: #f8f8f8;
+    border: 1px solid #999;
+    border-radius: 5px;
+    border-radius: 0;
+    border-right: 0;
+    display: flex;
+    align-items: center;
+    line-height: 12px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+.formulario p input,
+.formulario p textarea {
+    width: 100%;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    border: 1px solid #999;
+    border-left: 0px;
+    font-size: 14px;
+    padding: 6px 20px;
+    margin-bottom: 5px;
+}
+
+.mensajetext label {
+    height: 162px;
+
+}
+
+.formulario p textarea {
+    height: 150px;
+    resize: none;
+}
+
+/*}}.mensajetex p:nth-child(4){
+    align-items: flex-start;
+}*/
+/*EN CASO QUE SEA EL  ULTIMO HIJO*/
+
+.mensajetext {
+    align-items: flex-start;
+}
+
+/*pero como puedo agregar más campos me sirve esto*/
+
+.formulario input[type="submit"] {
+    background-color: #02847d;
+    box-shadow: 0 0 0 10px rgba (0, 0, 0, 0, 4);
+    color: white;
+    font-size: 16px;
+    padding: 6px 70px;
+    width: auto;
+    position: relative;
+    /*para que la cajita siga a las otras cajas y sea relativo al anterior*/
+    left: 1px;
+    cursor: pointer;
+    /*pone la manito*/
+    margin-top: 10px;
+    border-left: 1px #999 solid;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #ff8f00;
+}
+
+/*************FIN CONTACTO*******************/
+
+
+
+
+/* RESPONSIVE *******************
+
+@media screen and (max-width:550px) {
+    body {
+        background-color: red;
+    }
+
+
+    nav {
+        /*overflow-x: scroll;   provisorio
+        background-color: green;
+    }
+
+
+    .holder {
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+}
+
+
+
+ FIN RESPONSIVE ************* */
