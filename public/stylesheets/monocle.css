@@ -89,8 +89,9 @@ nav ul li a {
     color: black;
     font-weight: 600;
     text-decoration: none;
-    margin: 0 10px;
-    /* crea la separación entre las palabras del menu*/
+    /*espacio entre cada link del menu*/
+    margin: 0 5px;
+    /* margenes dentro del cuadro de cada opcion del menu*/
     padding: 3px 5px;
     /* para que se vean los espacio al princio y final de la letra, hace que se vea la linea de arriba y abajo más larga*/
     /*display: block;*/
@@ -123,6 +124,7 @@ footer {
     padding: 10px 0;
     color: white;
     max-width: 100%;
+    
 
 }
 
@@ -145,6 +147,8 @@ footer h4 {
 }
 
 
+    
+    
 
 .parte:last-child {
     text-align: center;
@@ -255,7 +259,8 @@ main {
     /*background-color: red;   */
     margin: 1rem;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    margin-top: 40px;
 
 }
 

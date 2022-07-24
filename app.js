@@ -10,7 +10,7 @@ var indexRouter = require('./routes/index');
 var monocleRouter = require('./routes/monocle');
 var contactoRouter = require('./routes/contacto');
 var serviciosRouter = require('./routes/servicios');
-var portafolioRouter = require('./routes/portafolio');
+var avantgardeRouter = require('./routes/avantgarde');
 
 var app = express();
 
@@ -28,7 +28,7 @@ app.use('/', indexRouter);
 app.use('/monocle', monocleRouter);
 app.use('/contacto', contactoRouter);
 app.use('/servicios', serviciosRouter);
-app.use('/portafolio', portafolioRouter);
+app.use('/avantgarde', avantgardeRouter);
 
 
 // catch 404 and forward to error handler

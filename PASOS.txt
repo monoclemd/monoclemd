@@ -1,0 +1,86 @@
+npm init   : inicio el json para mi proiyecto
+Instalación nd dependencias
+- npm aos
+- npm moment
+- npm jquery
+- npm i jquery-validation
+
+
+PREPARAR UN REPO CON NODE
+- git init
+Creo un .gitignore y agrego dentro 
+    node_modules
+     material
+- git commit -m "first commit"
+- git branch -M main
+
+git remote add origin https://github.com/monoclemd/monoclemd.git
+git push -u origin main
+
+
+EXPRESS--------
+
+- npx express-generator --view=hbs   instalaa carpetas y archivos para trabajar
+
+
+- npm start  t comienzo a trabajar dentro del proyecto que se peude ver con localhost:3000 en el navegador
+
+- npm i nodemon (actualización del servidor automática)
+
+- crear hbs y js 
+
+
+----------PARA CONTACTOS
+
+npm i nodemailer
+npm i dotenv
+
+- archivo .env con los datos del servidor de mail
+SMTP_HOST=smtp.mailtrap.io
+SMTP_PORT=2525
+SMTP_USER=xxxxxxxxxxxxxx
+SMTP_PASS=xxxxxxxxxxxxxx
+
+
+- en app.js:  
+require('dotenv').config()  carga los datos del dotenv
+- en contacto.js:  
+var nodemailer = require('nodemailer');    para llamar al nodemailer
+
+
+router.post('/', function(req,res,next){
+
+    console.log(req.body)
+    
+    var nombre = req.body.nombre;
+    var email = req.body.email;
+    var tel = req.body.tel;
+    var rrss = req.body.rrss;
+    var mensaje = req.body.mensaje;
+
+
+})
+
+
+
+
+--------------
+
+https://mailtrap.io/inboxes/1804714/messages
+
+var transport = nodemailer.createTransport({
+  host: "smtp.mailtrap.io",
+  port: 2525,
+  auth: {
+    user: "4ced108a5bc105",
+    pass: "034994303caec2"
+  }
+});
+
+
+
+
+
+npm i mysql
+npm i util
+npm i md5
