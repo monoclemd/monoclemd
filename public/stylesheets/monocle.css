@@ -44,7 +44,10 @@ body {
     background-color: #edeaee;
     background-repeat: repeat-y;
     background-position-x: right;
+
+    
 }
+
 
 
 
@@ -141,13 +144,27 @@ footer .parte {
 }
 
 
-
 footer h4 {
     margin-bottom: 5px;
 }
 
 
-    
+footer p {
+    margin: 0;
+    font-size: 10px;
+    max-width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
     
 
 .parte:last-child {
@@ -190,12 +207,7 @@ footer h4 {
 }
 
 
-footer p {
-    margin: 0;
-    font-size: 10px;
-    max-width: 100%;
 
-}
 
 
 
