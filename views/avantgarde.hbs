@@ -1,16 +1,27 @@
-<div class="titulo">
-            <div><img src="images/avantgarde.png" alt="noticias"></div>
-            <div>
-                <h1>AVANT-GARDE / Noticias</h1>
-            </div>
-        </div>
+<br><br>
+<h2 class="AG" style="font-size: 30px; text-align: left; color: #02847d">Avant-Garde / Noticias</h2>
 
-        <div class="monocle">
-            
-            
-            
+<div style="float:right; position: relative; bottom: 35px">
+    <form action="/avantgarde" method="get">
+        <input style="height: 25px;" type="search" name="q" {{#if q}} value="{{q}}" {{/if}}>
+        <button type="submit" class="btn btn-secondary btn-sm" style="background-color: #02847d; border: none"> <i
+                class="fa-solid fa-magnifying-glass"> </i> Buscar </i></button>
+    </form>
+</div>
 
-            <h1>avantgarde</h1>
-            
+{{#each avantgarde}}
+<div style="margin-top: 45px; text-align: justify">
+    <h6 style="font-weight: bold; color: #02847d ">{{titulo}}</h6>
+    <p class="cuerpo">{{cuerpo}}</p>
 
-        </div>
+</div>
+
+{{/each}}
+
+{{#if is_search}}
+{{#unless avantgarde}}
+<p>Noticias que coinciden con: <b> "{{q}}"</b></p>
+{{/unless}}
+{{/if}}
+
+<br><br><br><br>

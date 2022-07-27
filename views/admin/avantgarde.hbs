@@ -1,0 +1,86 @@
+<div class="container campos">
+    {{!-- inicio fila 1 --}}
+    <div class="row">
+        <div class="col">
+            <p class="text-end" style="font-size: 20px; color: #ff8f00">Hola {{persona}} !
+                <a href="/admin/login/logout" class="btn btn-danger btn-sm" style="background-color:#ff8f00; border: 0">Salir <i
+                        class="fa-solid fa-right-from-bracket"></i></a>
+            </p>
+        </div>
+    </div>
+    {{!-- fin fila 1 --}}
+
+
+    {{!-- inicio fila 2 --}}
+    <div class="row">
+        <div class="col-7">
+            <h2 style="font-family: 'Montserrat Subrayada'; color: #02847d; text-align: left">Lista de Noticias</h2>
+        </div>
+        <div class="col-2 text-end">
+            <a href="/admin/avantgarde/agregar" class="btn btn-success btn-sm" style="background-color:#02847d ;" > <i class="fa-solid fa-plus"></i>Nuevo
+            </a>
+        </div>
+
+        <div class="col-3 text-end"  >
+            <form action="/admin/avantgarde" method="get" class="d-flex">
+                <input class="form-control form-control-sm me-2" type="search" placeholder="Buscar" aria-label="Search" name="q" {{#if 1}} value="{{q}}" {{/if}}>
+                <button type="submit" class="btn btn-secondary btn-sm" style="background-color:#ff8f00; border: 0"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <br><br>
+        </div>
+
+
+    </div>
+    {{!-- fin fila 2 --}}
+
+    {{!-- inicio fila 3--}}
+    <div class="row">
+        <div class="col">
+
+            <table class="table">
+                <thead>
+                    <tr style="background-color: #02847d;">
+                        <th style="font-size: 13px; color: white" scope="col">#</th>
+                        <th style="font-size: 13px; color: white" scope="col">Noticia</th>
+                        <th style="font-size: 13px; color: white" scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    {{#each avantgarde}} {{!-- -------- lo que se va a repetir --}}
+
+                    <tr>
+                        <th style="vertical-align: middle" scope="row">{{id}}</th> {{!-- nombre de la comlumna de la
+                        tabla --}}
+                        <td style="text-align: left; vertical-align: middle; font-size: 13px">{{titulo}}</td>
+                        <td class="text-end">
+                            <a href="/admin/avantgarde/modificar/{{id}}" class="btn btn-secondary btn-sm" style="background-color:#02847e8a; border: 0"><i
+                                    class="fa-solid fa-pencil"></i></a> {{!-- MODIFICAR --}}
+                            <a href="/admin/avantgarde/eliminar/{{id}}" class="btn btn-secondary btn-sm" style="background-color:#02847e8a; border: 0"><i
+                                    class="fa-solid fa-trash"></i></a>
+                        </td> {{!-- ELIMINAR --}}
+                    </tr>
+
+                    {{/each}} {{!-- -------- FIN DE lo que se va a repetir --}}
+
+                </tbody>
+            </table>
+
+
+                <br><br>
+
+
+
+            {{#if is_search}}
+            {{#unless avantgarde.length}}
+            <p>No se encontraron resultados para <b> "{{q}}"</b></p>
+            {{/unless}}
+            {{/if}}
+
+        </div>
+
+    </div>
+
+    {{!-- fin fila 3 --}}
+
+</div>

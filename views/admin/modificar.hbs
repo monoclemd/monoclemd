@@ -1,0 +1,43 @@
+<br>
+<div class="container campos">
+    <div class="row">
+        <div class="col">
+
+            <h2 class="AG" style="font-size: 30px; text-align: left; color: #02847d">Modificar Noticia{{!--  {{avantgarde.titulo}} --}}</h2> <br>
+
+
+            <form action="/admin/avantgarde/modificar" method="post">
+
+                <input type="hidden" value="{{avantgarde.id}}" name="id">
+
+                <div class="mb-3" style="text-align: left; font-size: 15px; ">
+                    <label class="form-label">Título</label>
+                    <input type="text" class="form-control form-control-sm" name="titulo" value="{{avantgarde.titulo}}">
+                </div>
+
+                
+                <div class="mb-3" style="text-align: left; font-size: 15px; ">
+                    <label class="form-label">Cuerpo</label>
+                    <textarea class="form-control form-control-sm" rows="3" name="cuerpo" style="height: 200px ;">{{avantgarde.cuerpo}}</textarea>
+                </div>
+<br>
+                <div class="col-auto">
+
+                    <a href="/admin/avantgarde/" <button type="button" class="btn btn-secondary btn-sm mb-3" style="background-color: #ff8f00; border: none"> <i class="fa-solid fa-person-running"> </i> Volver</button></a>
+
+                    <button  type="submit" class="btn btn-primary btn-sm mb-3" style="background-color: #02847d; border: none">Modificar</button>
+
+                 
+
+                </div>
+            </form>
+            {{#if error}}
+            <p>{{message}}</p>
+            {{/if}}
+
+        </div>
+
+    </div>
+
+</div>
+<br><br>

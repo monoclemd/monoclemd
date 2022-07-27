@@ -349,6 +349,8 @@ main {
 
 }
 
+
+
 .asesor {
     margin-top: 60px;
 }
@@ -583,7 +585,7 @@ b {
 }
 
 .formulario p textarea {
-    height: 150px;
+    height: 162px;
     resize: none;
 }
 
@@ -622,29 +624,51 @@ b {
 
 
 
-
-/* RESPONSIVE *******************
-
-@media screen and (max-width:550px) {
-    body {
-        background-color: red;
-    }
+/**************** INICIO AVANTGARD  ******************/
 
 
-    nav {
-        /*overflow-x: scroll;   provisorio
-        background-color: green;
-    }
-
-
-    .holder {
-        padding-left: 10px;
-        padding-right: 10px;
-
-    }
+.AG {
+    max-width: 700px;
+    line-height: 17px;
+    /*background-color: lightblue;*/
+    /*margin: 10px 20%;*/    
+    padding-right: 10px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat Subrayada';
 
 }
 
 
+.cuerpo p  {
+    text-align: left;
+    font-weight: 400;
+    text-align: justify;
+    border-bottom: 10px solid #d87203;
+    
 
- FIN RESPONSIVE ************* */
+}
+
+
+.cuerpo:nth-last-child(1) {
+    border-bottom: none;
+}
+
+
+/**************** FIN AVANTGARD  ******************/
+
+/**************** INICIO LOGIN  ******************/
+
+.campos {
+    margin-top: 50px;
+    
+ 
+    
+}
+
+
+
+
+
+/**************** FIN  LOGIN  ******************/
+
+
