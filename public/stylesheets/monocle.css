@@ -157,6 +157,23 @@ footer p {
 }
 
 
+.content {
+    min-height: 100%;
+  }
+  .content-inside {
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+  .footer {
+    height: 100px;
+    margin-top: -50px;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
 
 
 
