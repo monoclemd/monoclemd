@@ -16,16 +16,21 @@
         <div class="col-7">
             <h2 style="font-family: 'Montserrat Subrayada'; color: #02847d; text-align: left">Lista de Noticias</h2>
         </div>
-        <div class="col-2 text-end">
-            <a href="/admin/avantgarde/agregar" class="btn btn-success btn-sm" style="background-color:#02847d ;" > <i class="fa-solid fa-plus"></i>Nuevo
-            </a>
-        </div>
+       
 
-        <div class="col-3 text-end"  >
+        <div class="col-4 text-end" >
             <form action="/admin/avantgarde" method="get" class="d-flex">
                 <input class="form-control form-control-sm me-2" type="search" placeholder="Buscar" aria-label="Search" name="q" {{#if 1}} value="{{q}}" {{/if}}>
                 <button type="submit" class="btn btn-secondary btn-sm" style="background-color:#ff8f00; border: 0"><i class="fa-solid fa-magnifying-glass"></i></button>
+                 
+                <div class="col-2 text-end">
+            <a href="/admin/avantgarde/agregar" class="btn btn-success btn-sm" style="background-color:#02847d ;" > <i class="fa-solid fa-plus" ></i> 
+            </a>
+        </div>
+
+
             </form>
+            
             <br><br>
         </div>
 
@@ -57,7 +62,7 @@
                             <a href="/admin/avantgarde/modificar/{{id}}" class="btn btn-secondary btn-sm" style="background-color:#02847e8a; border: 0"><i
                                     class="fa-solid fa-pencil"></i></a> {{!-- MODIFICAR --}}
                             <a href="/admin/avantgarde/eliminar/{{id}}" class="btn btn-secondary btn-sm" style="background-color:#02847e8a; border: 0"><i
-                                    class="fa-solid fa-trash"></i></a>
+                                    class="fa-solid fa-trash" style="size: 20px"></i></a>
                         </td> {{!-- ELIMINAR --}}
                     </tr>
 
