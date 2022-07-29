@@ -157,6 +157,17 @@ footer p {
 }
 
 
+
+.footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    height: 100px;
+    margin-top: -100px;
+    
+    }
+
+
 .content {
     min-height: 100%;
   }
@@ -289,7 +300,7 @@ main {
     margin: 1rem;
     text-align: center;
     margin-bottom: 40px;
-    margin-top: 40px;
+    margin-top: 70px;
 
 }
 
@@ -502,12 +513,12 @@ b {
 
 
 
-.contacto h2 {
+.contacto h3 {
     color: #ff8f00;
     margin-top: 20px;
 }
 
-.datos h2 {
+.datos h4 {
     color: #ff8f00;
     margin-top: 20px;
     margin-bottom: 14px;
@@ -548,7 +559,7 @@ b {
 }
 
 .wsp p {
-    margin-top: 3px;
+    margin-top: 25px;
 }
 
 .wsp a {
